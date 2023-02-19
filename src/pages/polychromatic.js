@@ -70,7 +70,7 @@ export default function Polychromatic() {
 
   useEffect(() => {
     getPolychromaticData();
-  }, []);
+  },);
 
   const defaultOptions = {
     loop: true,

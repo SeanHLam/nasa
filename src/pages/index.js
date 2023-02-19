@@ -23,7 +23,7 @@ export default function Home() {
 
   useEffect(() => {
     getTechTransferData();
-  }, []);
+  },);
 
   const defaultOptions = {
     loop: true,
@@ -73,7 +73,7 @@ export default function Home() {
                     tech.map((t, ind) => {
                       if (ind === 10) {
                         return (
-                          <div className="bg-indigo-800 w-80  p-2 flex mb-1 rounded justify-center items-center flex-wrap flex-col hover:scale-105  transition-all">
+                          <div key={ind} className="bg-indigo-800 w-80  p-2 flex mb-1 rounded justify-center items-center flex-wrap flex-col hover:scale-105  transition-all">
                             <Image
                               className="rounded"
                               src={t}
